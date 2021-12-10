@@ -1,0 +1,246 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+#header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#header .nav-item {
+  border-right: 1px solid rgba(255, 255, 255, 0.808);
+  margin-right: 30px;
+  padding-right: 20px;
+  line-height: 10px;
+  font-size: 14px;
+}
+
+#header nav a {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#header nav a:hover {
+  color: rgba(255, 174, 0, 0.952);
+}
+
+.navbar-toggler {
+  color: #fff;
+}
+
+#header_body {
+  color: #fff;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#header_body h1 {
+  font-size: 54px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-transform: uppercase;
+}
+
+#header_body p {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+#header_body .read_more_button {
+  font-size: 20px;
+  margin-top: 20px !important;
+  color: #fff !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 25px;
+  border: 2px solid rgba(255, 174, 0, 0.952);
+  border-radius: 12px;
+  transition: all 0.3s ease-in-out;
+}
+
+#header_body .read_more_button:hover {
+  background-color: rgba(255, 174, 0, 0.952);
+}
+
+#header_main_body {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.486);
+}
+
+#header_main_body h4 {
+  color: rgba(255, 174, 0, 0.952);
+}
+
+#header_main_body p {
+  font-size: 20px;
+}
+
+#header_main_body .header_details {
+  text-align: center;
+  padding: 30px;
+}
+
+#header_main_body .border_right {
+  border-right: 1px solid rgba(255, 255, 255, 0.404);
+}
+
+/* ===================main starts here=========================== */
+#main {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.why_choose_us_heading {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.why_choose_us_heading_span {
+  font-size: 40px;
+  color: rgba(255, 174, 0, 0.952);
+}
+
+.why_choose_us_row img {
+  height: 500px;
+  width: 500px;
+}
+
+.learn_more {
+  margin-top: 30px;
+  text-decoration: none;
+  background-color: rgba(255, 174, 0, 0.952);
+  color: #fff;
+  padding: 10px 20px;
+}
+.learn_more:hover {
+  text-decoration: none;
+  background-color: rgba(255, 174, 0, 0.753);
+  color: #fff;
+}
+
+/* =============================OUR SERVICES SECTION STARTS HERE====================== */
+
+#our_services {
+  padding: 90px;
+  background: linear-gradient(rgba(0, 0, 1, 0.493), rgba(0, 0, 1, 0.281)),
+    url("../img/our_services.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#our_services h2 {
+  font-size: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+#our_services h2::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+
+.our_services_heading {
+  position: relative;
+}
+
+.our_services_heading::after {
+  content: "";
+  width: 50px;
+  height: 1px;
+  background-color: red;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+
+#our_services .card {
+  min-width: 40%;
+}
+
+.services_learn_more_btn {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(255, 174, 0, 0.952);
+}
+
+.services_learn_more_btn:hover {
+  background-color: rgba(255, 174, 0, 0.815);
+  color: #fff;
+}
+
+/* =============================OUR SERVICES SECTION ENDS HERE====================== */
+/* =============================FOOTER SECTION STARTS HERE====================== */
+#footer {
+  width: 100%;
+  min-height: 100px;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 0;
+}
+/* =============================FOOTER SECTION ENDS HERE====================== */
+/* ======================MEDIA QUERIES STARTS FROM HERE================= */
+@media screen and (max-width: 1100px) {
+  #header_body h1 {
+    font-size: 48px;
+  }
+
+  #header_body .read_more_button {
+    padding: 10px 20px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #header_body h1 {
+    font-size: 38px;
+  }
+
+  #header_body p {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #header_body h1 {
+    font-size: 35px;
+  }
+
+  #header_body p {
+    font-size: 24px;
+  }
+}
+/* ======================MEDIA QUERIES ENDS HERE================= */
