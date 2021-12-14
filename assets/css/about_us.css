@@ -1,0 +1,70 @@
+#about_us_header {
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/bg.jpg");
+}
+
+#about_us_heading {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  margin-top: 100px;
+  position: relative;
+}
+
+#about_us_heading2,
+.our_mission_heading,
+.our_vision_heading {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 100px;
+}
+
+#about_us_heading::after,
+#about_us_heading2::after,
+.our_mission_heading::after,
+.our_vision_heading::after {
+  content: "";
+  width: 40px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  background-color: red;
+  height: 4px;
+}
+
+.about_us_bg {
+  background: url("../img/security.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+.our_mission {
+  margin-top: 100px;
+  min-height: 500px;
+  margin-bottom: 100px;
+}
+
+.our_mission_bg {
+  background: url("../img/security1.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.our_mission_content {
+  margin-top: 100px;
+  font-weight: bold;
+}
+
+.our_vision {
+  margin-bottom: 100px;
+}
+
+.our_vision_bg {
+  background: url("../img/security2.jpg");
+  background-position: top;
+  background-size: cover;
+  min-height: 400px;
+}

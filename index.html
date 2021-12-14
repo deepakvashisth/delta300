@@ -12,7 +12,14 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <title>Home</title>
   </head>
@@ -41,7 +48,7 @@
                   <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link" href="./about_us.html">About Us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Our Services</a>
@@ -55,7 +62,7 @@
         </nav>
       </div>
 
-      <div id="header_body">
+      <div id="header_body" data-aos="fade-in">
         <h1>Leader in our Field</h1>
         <p class="mb-5">Ultimate Manpower Solution</p>
         <a class="read_more_button" href="./about.html">Read more...</a>
@@ -80,7 +87,7 @@
     </header>
     <main id="main">
       <!-- =================why choose us starts here=================== -->
-      <div class="container">
+      <div class="container" data-aos="fade-in">
         <div class="row why_choose_us_row mb-5">
           <div class="col-md-7">
             <h2 class="why_choose_us_heading">
@@ -114,12 +121,12 @@
 
       <!-- ======================our services section starts here======================== -->
 
-      <section id="our_services">
+      <section id="our_services" data-aos="fade-in">
         <h2 class="text-center text-white">
           <img src="./assets/img/service.png" /> Services
         </h2>
         <div class="row container">
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4" data-aos="flip-left">
             <div class="card">
               <div class="card-body">
                 <h5 class="text-center mb-5 our_services_heading">
@@ -139,7 +146,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4" data-aos="flip-right">
             <div class="card">
               <div class="card-body">
                 <h5 class="text-center mb-5 our_services_heading">
@@ -159,7 +166,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4" data-aos="flip-left">
             <div class="card">
               <div class="card-body">
                 <h5 class="text-center mb-5 our_services_heading">
@@ -187,14 +194,126 @@
       <!-- ==============================contact us section starts here========================= -->
       <section id="contact_us">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="./assets/img/logo.png" alt="delta 300 logo" />
+          <h2 class="text-center mb-5">Contact Us</h2>
+          <div class="row contact_us_body">
+            <div class="col-md-4">
+              <img
+                class="mb-5"
+                src="./assets/img/logo.png"
+                alt="delta 300 logo"
+              />
+              <p>
+                DELTA 300 a premier ISO 9001:2015 Certified Ultimate Manpower
+                Solution Company, provides wide range of Security, Manpower and
+                House-Keeping related services and that includes Unarmed Manned
+                Guarding Services; Skilled & Unskilled Manpower Service;
+                Temporary Staffing; Facility Management; Housekeeping Services.
+              </p>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
               <div class="delta_300_address">
-                Plot no 1<br />
-                Shop 3,4 shani Mandir Sactor 8 <br />
-                IMT Manesar Gurugram
+                <h3>Get in Touch with us</h3>
+
+                <address class="mt-5">
+                  <img
+                    src="./assets/img/location.png"
+                    alt="delta300 address"
+                    height="40px"
+                  />
+                  <span class="office_address"
+                    >RZ-3A,New Roshanpura <br />Nazafgarh, New Delhi</span
+                  >
+                </address>
+                <p class="social_links mt-5">
+                  <a href="">
+                    <img
+                      class="social_icons"
+                      src="./assets/img/facebook.png"
+                      alt=""
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      class="social_icons"
+                      src="./assets/img/instagram.png"
+                      alt=""
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      class="social_icons"
+                      src="./assets/img/twitter.png"
+                      alt=""
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      class="social_icons"
+                      src="./assets/img/whatsapp.png"
+                      alt=""
+                    />
+                  </a>
+                </p>
               </div>
+              <!-- <form action="" class="contact_us_form">
+                <form>
+                  <div class="row">
+                    <div class="mb-3 col-md-6">
+                      <label for="firstName" class="form-label"
+                        >First Name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="firstName"
+                        placeholder="enter first name"
+                        required
+                      />
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                      <label for="lastName" class="form-label">Last Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="lastName"
+                        placeholder="enter last name"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="enter email address"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="mobile" class="form-label">Mobile Number</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="number"
+                      placeholder="enter mobile number"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="floatingTextarea">Enter Your Question</label>
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a comment here"
+                      id="floatingTextarea"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </form> -->
             </div>
           </div>
         </div>
@@ -219,5 +338,9 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
