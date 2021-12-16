@@ -29,9 +29,7 @@ body {
 }
 
 #header .nav-item {
-  border-right: 1px solid rgba(255, 255, 255, 0.808);
-  margin-right: 30px;
-  padding-right: 20px;
+  margin-right: 10px;
   line-height: 10px;
   font-size: 14px;
 }
@@ -209,6 +207,16 @@ body {
 
 /* =============================OUR SERVICES SECTION ENDS HERE====================== */
 
+/*testimonials*/
+.testimonial-quotes {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonial-author {
+  color: rgba(255, 174, 0, 0.815);
+}
+
 /* =================CONTACT US SECTION STARTS HERE===================== */
 #contact_us {
   padding: 100px;
@@ -269,7 +277,6 @@ body {
   margin: 100px auto;
   padding: 40px;
   border-radius: 30px;
-  box-shadow: 3px 3px 3px 3px #c3c3c3;
 }
 
 #our-testimonials {
@@ -289,6 +296,36 @@ body {
 
 .carousel-indicators {
   position: relative;
+}
+
+#gallery_header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/security3.PNG");
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+}
+
+#gallery_heading {
+  color: #fff;
+  margin-top: 5%;
+  text-align: center;
+  position: relative;
+}
+
+#gallery_heading::after {
+  content: "";
+  width: 40px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  background-color: red;
+  height: 4px;
+}
+
+.img-thumbnail {
+  border: none;
+  height: 400px;
 }
 
 /* =============================FOOTER SECTION STARTS HERE====================== */
