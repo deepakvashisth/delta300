@@ -153,7 +153,7 @@ body {
 #our_services {
   padding: 90px;
   background: linear-gradient(rgba(0, 0, 1, 0.493), rgba(0, 0, 1, 0.281)),
-    url("../img/our_services.jpg");
+    url("../img/security3.PNG");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -270,6 +270,25 @@ body {
   padding: 40px;
   border-radius: 30px;
   box-shadow: 3px 3px 3px 3px #c3c3c3;
+}
+
+#our-testimonials {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/bg.jpg");
+  padding: 100px;
+  color: #fff;
+}
+
+.testimonial-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+
+.carousel-indicators {
+  position: relative;
 }
 
 /* =============================FOOTER SECTION STARTS HERE====================== */
