@@ -13,6 +13,12 @@ body {
   min-height: 100vh;
 }
 
+.pasara {
+  background-color: yellow;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
 #header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../img/bg.jpg");
@@ -45,6 +51,7 @@ body {
 
 #header_body {
   color: #fff;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -248,6 +255,23 @@ body {
 }
 
 /* =================CONTACT US SECTION STARTS HERE====================== */
+
+#contact_us_header {
+  height: 400px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/contact-us.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.contact_us_form {
+  max-width: 55%;
+  margin: 100px auto;
+  padding: 40px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 3px 3px #c3c3c3;
+}
+
 /* =============================FOOTER SECTION STARTS HERE====================== */
 #footer {
   width: 100%;
@@ -268,7 +292,7 @@ body {
 /* ======================MEDIA QUERIES STARTS FROM HERE================= */
 @media screen and (max-width: 1100px) {
   #header_body h1 {
-    font-size: 48px;
+    font-size: 45px;
   }
 
   #header_body .read_more_button {
@@ -287,13 +311,17 @@ body {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 800px) {
   #header_body h1 {
-    font-size: 35px;
+    font-size: 34px;
   }
 
   #header_body p {
     font-size: 24px;
+  }
+
+  .why_choose_us_heading_span {
+    font-size: 37px;
   }
 }
 /* ======================MEDIA QUERIES ENDS HERE================= */

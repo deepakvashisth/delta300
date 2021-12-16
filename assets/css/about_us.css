@@ -1,10 +1,13 @@
-#about_us_header {
+#about_us_header,
+#our_services_header {
   height: 400px;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../img/bg.jpg");
 }
 
-#about_us_heading {
+#about_us_heading,
+#our_services_heading,
+#contact_us_heading {
   text-align: center;
   color: #fff;
   font-size: 40px;
@@ -13,6 +16,7 @@
 }
 
 #about_us_heading2,
+#our_services_heading2,
 .our_mission_heading,
 .our_vision_heading {
   position: relative;
@@ -22,6 +26,9 @@
 }
 
 #about_us_heading::after,
+#contact_us_heading::after,
+#our_services_heading::after,
+#our_services_heading2::after,
 #about_us_heading2::after,
 .our_mission_heading::after,
 .our_vision_heading::after {
@@ -67,4 +74,14 @@
   background-position: top;
   background-size: cover;
   min-height: 400px;
+}
+
+.about_us_div {
+  background-color: rgba(207, 193, 193, 0.658);
+  padding: 30px;
+}
+
+.about_us_div .column {
+  border: 1px solid black;
+  padding: 10px;
 }
